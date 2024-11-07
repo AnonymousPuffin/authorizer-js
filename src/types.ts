@@ -125,6 +125,7 @@ export interface GraphqlQueryInput {
 export interface MetaData {
   version: string;
   client_id: string;
+  is_discord_login_enabled: boolean;
   is_google_login_enabled: boolean;
   is_facebook_login_enabled: boolean;
   is_github_login_enabled: boolean;
@@ -197,6 +198,7 @@ export interface ValidJWTResponse {
 
 export enum OAuthProviders {
   Apple = 'apple',
+  Discord = 'discord',
   Github = 'github',
   Google = 'google',
   Facebook = 'facebook',
